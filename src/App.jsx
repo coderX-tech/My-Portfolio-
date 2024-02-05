@@ -205,7 +205,7 @@ export default function Portfolio() {
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
               <span className="text-base font-medium text-blue-700 dark:text-white">
-                Javasript
+                Javascript
               </span>
               <span className="text-sm font-medium text-blue-700 dark:text-white">
                 80%
