@@ -2,8 +2,8 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html",
-      "exclude": ["/sitemap.xml"]
+      "destination": "/sitemap.xml",
+      "exclude": ["/index.html"]
     }
   ]
 }
