@@ -172,10 +172,10 @@ export default function Portfolio() {
         >
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 HTML5
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 95%
               </span>
             </div>
@@ -188,10 +188,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 CSS3
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 95%
               </span>
             </div>
@@ -204,10 +204,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 Javascript
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 80%
               </span>
             </div>
@@ -220,10 +220,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 Python
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 85%
               </span>
             </div>
@@ -236,10 +236,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 React
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 90%
               </span>
             </div>
@@ -252,10 +252,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 Django
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 93%
               </span>
             </div>
@@ -268,10 +268,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 Figma
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 75%
               </span>
             </div>
@@ -284,10 +284,10 @@ export default function Portfolio() {
           </div>
           <div className="md:w-[45%] w-[95%]">
             <div className="flex justify-between mb-1 md:w-[95%] w-[95%] pt-4 mx-2">
-              <span className="text-base font-medium text-blue-700 dark:text-white">
+              <span className="text-base font-medium text-white dark:text-white">
                 Git and Github
               </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-white">
+              <span className="text-sm font-medium text-white dark:text-white">
                 85%
               </span>
             </div>
@@ -314,7 +314,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div id="services" className="services bg-slate-800 py-10">
-        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white text-center">
           Services
         </h1>
         <div className="container flex flex-wrap justify-center items-center gap-3 w-full ">
