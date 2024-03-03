@@ -16,6 +16,8 @@ import flasks from "./assets/flasks.png";
 import idea from "./assets/idea.png";
 import api from "./assets/api.png";
 import control from "./assets/filter.png";
+import template from "./assets/template.png";
+
 export default function Portfolio() {
   const [typeEffect] = useTypewriter({
     words: [
@@ -65,24 +67,40 @@ export default function Portfolio() {
           <nav className="hidden md:flex items-center space-x-4">
             <ul className="hidden md:flex space-x-4">
               <li>
-                <a href="#home" className="text-white hover:text-gray-300">
+                <a
+                  href="#home"
+                  className="text-white hover:text-gray-300 no-underline relative group"
+                >
                   Home
+                  <span className="absolute left-0 right-0 bottom-0 h-[0.129rem] rounded bg-yellow-600  transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-in-out"></span>
                 </a>
               </li>
 
               <li>
-                <a href="#skills" className="text-white hover:text-gray-300">
+                <a
+                  href="#skills"
+                  className="text-white  no-underline relative group"
+                >
                   Skills
+                  <span className="absolute left-0 right-0 bottom-0 h-[0.129rem] rounded bg-yellow-600  transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-in-out"></span>
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-white hover:text-gray-300">
+                <a
+                  href="#services"
+                  className="text-white  no-underline relative group"
+                >
                   Services
+                  <span className="absolute left-0 right-0 bottom-0 h-[0.129rem] rounded bg-yellow-600  transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-in-out"></span>
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-white hover:text-gray-300">
+                <a
+                  href="#contact"
+                  className="text-white hover:text-gray-300 no-underline relative group"
+                >
                   Contact
+                  <span className="absolute left-0 right-0 bottom-0 h-[0.129rem] rounded bg-yellow-600  transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-in-out"></span>
                 </a>
               </li>
             </ul>
@@ -112,6 +130,7 @@ export default function Portfolio() {
                 <li className="hover:text-gray-300 hover:italic w-full block transition-all m-1 hover:translate-x-1">
                   <a href="#services" className="text-white">
                     Services
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-in-out"></span>
                   </a>
                 </li>
                 <li className="hover:text-gray-300 hover:italic w-full block transition-all m-1 hover:translate-x-1">
@@ -124,7 +143,7 @@ export default function Portfolio() {
           </div>
         ) : null}
       </header>
-      <div className="hero  p-2 bg-slate-800 md:p-16 flex">
+      <div className="hero  p-2 bg-slate-800 md:p-16 flex items-center">
         <div className="md:basis-2/4 md:p-7">
           <h3 className="text-2xl md:text-4xl text-gray-500 py-2">Hey!</h3>
           <h1 className="text-3xl whitespace-nowrap md:text-5xl font-[1000] text-white py-2">
@@ -150,6 +169,9 @@ export default function Portfolio() {
               Hire Me
             </a>
           </div>
+        </div>
+        <div className="md:basis-2/4">
+          <img src={template} alt="profile pic" className="hidden lg:block" />
         </div>
       </div>
       <div
