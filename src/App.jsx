@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaBars, FaCss3Alt, FaGithub } from "react-icons/fa6";
+// import { ParallaxProvider, useParallax } from "react-scroll-parallax";
 import Stack from "@mui/material/Stack";
 import {
   FaHtml5,
@@ -43,12 +44,29 @@ export default function Portfolio() {
     setShowNav((prevShowNav) => !prevShowNav);
   }
 
+  // const parallax = useParallax({
+  //   speed: -10,
+  // });
+
   return (
     <div className="scroll-smooth">
       <header
         id="home"
-        className="scroll-smooth	bg-slate-900 border-b border-b-slate-600 flex flex-col justify-start items-center"
+        className="scroll-smooth relative	bg-slate-900 border-b border-b-slate-600 flex flex-col justify-start items-center"
       >
+        <div className="custom-shape-divider-bottom-1711686197">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              className="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <div className="container flex justify-between items-center py-4 ">
           <div className="logo flex items-center">
             <h2 className="font-medium text-white">
@@ -143,37 +161,50 @@ export default function Portfolio() {
           </div>
         ) : null}
       </header>
-      <div className="hero  p-2 bg-slate-800 md:p-16 flex items-center">
-        <div className="md:basis-2/4 md:p-7">
-          <h3 className="text-2xl md:text-4xl text-gray-500 py-2">Hey!</h3>
-          <h1 className="text-3xl whitespace-nowrap md:text-5xl font-[1000] text-white py-2">
-            I'm <span className="text-blue-400">Adebusuyi</span> Samuel.
-          </h1>
-          <h2 className="md:text-4xl text-white py-1">
-            I am a <span>{typeEffect}</span>
-          </h2>
-          <p className=" text-gray-300 md:text-lg py-2">
-            As a passionate and dedicated fullstack developer, I thrive on
-            crafting seamless digital experiences that blend intuitive user
-            interfaces with robust backend systems. With a blend of technical
-            expertise, creative problem-solving, and a keen eye for detail, I
-            bring projects to life that not only meet but exceed expectations.
-          </p>
-          <div className="p-3 text-white rounded-md w-[6rem] text-center h-auto whitespace-nowrap bg-blue-600">
-            <a
-              href="https://wa.me/+2348073847876"
-              className="font-medium"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Hire Me
-            </a>
+      <section class="output-window">
+        <div class="wave">
+          <div class="sub_wave">
+            <div className="hero  p-2 bg-slate-800 md:p-16 flex items-center">
+              <div className="md:basis-2/4 md:p-7">
+                <h3 className="text-2xl md:text-4xl text-gray-500 py-2">
+                  Hey!
+                </h3>
+                <h1 className="text-3xl whitespace-nowrap md:text-5xl font-[1000] text-white py-2">
+                  I'm <span className="text-blue-400">Adebusuyi</span> Samuel.
+                </h1>
+                <h2 className="md:text-4xl text-white py-1">
+                  I am a <span>{typeEffect}</span>
+                </h2>
+                <p className=" text-gray-300 md:text-lg py-2">
+                  As a passionate and dedicated fullstack developer, I thrive on
+                  crafting seamless digital experiences that blend intuitive
+                  user interfaces with robust backend systems. With a blend of
+                  technical expertise, creative problem-solving, and a keen eye
+                  for detail, I bring projects to life that not only meet but
+                  exceed expectations.
+                </p>
+                <div className="p-3 text-white rounded-md w-[6rem] text-center h-auto whitespace-nowrap bg-blue-600">
+                  <a
+                    href="https://wa.me/+2348073847876"
+                    className="font-medium"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Hire Me
+                  </a>
+                </div>
+              </div>
+              <div className="md:basis-2/4">
+                <img
+                  src={template}
+                  alt="profile pic"
+                  className="hidden lg:block"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="md:basis-2/4">
-          <img src={template} alt="profile pic" className="hidden lg:block" />
-        </div>
-      </div>
+      </section>
       <div
         id="skills"
         className="scroll-smooth	font-sans text-3xl text-gray-50 font-extralight pt-16"
@@ -233,6 +264,7 @@ export default function Portfolio() {
                 80%
               </span>
             </div>
+
             <div class="md:w-[95%] w-[95%] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mx-2">
               <div
                 class="bg-yellow-600 h-1.5 rounded-full dark:bg-yellow-600"
@@ -339,83 +371,86 @@ export default function Portfolio() {
         <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white text-center">
           Services
         </h1>
-        <div className="container flex flex-wrap justify-center items-center gap-3 w-full ">
-          <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
-            <img
-              src={idea}
-              alt="idea"
-              className="w-16 text-yellow-300 block m-auto md:pb-4"
-            />
-            <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
-              Frontend Development
-            </h2>
-            <hr className="border-t-2 w-16 m-auto border-yellow-300" />
-            <p className="text-gray-300 indent-4 text-pretty pt-4">
-              Proficient in modern frontend technologies including HTML5, CSS3,
-              JavaScript, and popular frameworks/libraries such as React.js.
-            </p>
+        <parallax speed={-10}>
+          <div className="container flex flex-wrap justify-center items-center gap-3 w-full ">
+            <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
+              <img
+                src={idea}
+                alt="idea"
+                className="w-16 text-yellow-300 block m-auto md:pb-4"
+              />
+              <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
+                Frontend Development
+              </h2>
+              <hr className="border-t-2 w-16 m-auto border-yellow-300" />
+              <p className="text-gray-300 indent-4 text-pretty pt-4">
+                Proficient in modern frontend technologies including HTML5,
+                CSS3, JavaScript, and popular frameworks/libraries such as
+                React.js.
+              </p>
+            </div>
+            <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
+              <img
+                src={flasks}
+                alt="flasks"
+                className="w-16 text-yellow-300 block m-auto md:pb-4"
+              />
+              <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
+                Backend Development
+              </h2>
+              <hr className="border-t-2 w-16 m-auto border-yellow-300" />
+              <p className="text-gray-300 indent-4 text-pretty pt-4">
+                Experienced in designing and implementing scalable backend
+                solutions using Django framework.
+              </p>
+            </div>
+            <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
+              <img
+                src={analysis}
+                alt="analysis"
+                className="w-16 text-yellow-300 block m-auto md:pb-4"
+              />
+              <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
+                Database Management{" "}
+              </h2>
+              <hr className="border-t-2 w-16 m-auto border-yellow-300" />
+              <p className="text-gray-300 indent-4 text-pretty pt-4">
+                Skilled in database design, management, and optimization using
+                relational databases(MySQL, PostgreSQL).
+              </p>
+            </div>
+            <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
+              <img
+                src={api}
+                alt="api"
+                className="w-16 text-yellow-300 block m-auto md:pb-4"
+              />
+              <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
+                API Development{" "}
+              </h2>
+              <hr className="border-t-2 w-16 m-auto border-yellow-300" />
+              <p className="text-gray-300 indent-4 text-pretty pt-4">
+                Extensive experience in building RESTful APIs to facilitate
+                seamless communication between frontend and backend systems.
+              </p>
+            </div>
+            <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
+              <img
+                src={control}
+                alt="control"
+                className="w-16 text-yellow-300 block m-auto md:pb-4"
+              />
+              <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
+                Version Control{" "}
+              </h2>
+              <hr className="border-t-2 w-16 m-auto border-yellow-300" />
+              <p className="text-gray-300 indent-4 text-pretty pt-4">
+                Proficient in version control systems such as Git, GitHub, and
+                GitLab for efficient collaboration and code management.
+              </p>
+            </div>
           </div>
-          <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
-            <img
-              src={flasks}
-              alt="flasks"
-              className="w-16 text-yellow-300 block m-auto md:pb-4"
-            />
-            <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
-              Backend Development
-            </h2>
-            <hr className="border-t-2 w-16 m-auto border-yellow-300" />
-            <p className="text-gray-300 indent-4 text-pretty pt-4">
-              Experienced in designing and implementing scalable backend
-              solutions using Django framework.
-            </p>
-          </div>
-          <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
-            <img
-              src={analysis}
-              alt="analysis"
-              className="w-16 text-yellow-300 block m-auto md:pb-4"
-            />
-            <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
-              Database Management{" "}
-            </h2>
-            <hr className="border-t-2 w-16 m-auto border-yellow-300" />
-            <p className="text-gray-300 indent-4 text-pretty pt-4">
-              Skilled in database design, management, and optimization using
-              relational databases(MySQL, PostgreSQL).
-            </p>
-          </div>
-          <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
-            <img
-              src={api}
-              alt="api"
-              className="w-16 text-yellow-300 block m-auto md:pb-4"
-            />
-            <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
-              API Development{" "}
-            </h2>
-            <hr className="border-t-2 w-16 m-auto border-yellow-300" />
-            <p className="text-gray-300 indent-4 text-pretty pt-4">
-              Extensive experience in building RESTful APIs to facilitate
-              seamless communication between frontend and backend systems.
-            </p>
-          </div>
-          <div className="card bg-slate-900 font-[Quicksand] rounded md:w-[30%] w-[800px] p-[1rem] md:h-[300px]">
-            <img
-              src={control}
-              alt="control"
-              className="w-16 text-yellow-300 block m-auto md:pb-4"
-            />
-            <h2 className="md:text-2xl whitespace-nowrap text-center text-white pt-2">
-              Version Control{" "}
-            </h2>
-            <hr className="border-t-2 w-16 m-auto border-yellow-300" />
-            <p className="text-gray-300 indent-4 text-pretty pt-4">
-              Proficient in version control systems such as Git, GitHub, and
-              GitLab for efficient collaboration and code management.
-            </p>
-          </div>
-        </div>
+        </parallax>
       </div>
       <div
         id="contact"
