@@ -161,50 +161,37 @@ export default function Portfolio() {
           </div>
         ) : null}
       </header>
-      <section class="output-window">
-        <div class="wave">
-          <div class="sub_wave">
-            <div className="hero  p-2 bg-slate-800 md:p-16 flex items-center">
-              <div className="md:basis-2/4 md:p-7">
-                <h3 className="text-2xl md:text-4xl text-gray-500 py-2">
-                  Hey!
-                </h3>
-                <h1 className="text-3xl whitespace-nowrap md:text-5xl font-[1000] text-white py-2">
-                  I'm <span className="text-blue-400">Adebusuyi</span> Samuel.
-                </h1>
-                <h2 className="md:text-4xl text-white py-1">
-                  I am a <span>{typeEffect}</span>
-                </h2>
-                <p className=" text-gray-300 md:text-lg py-2">
-                  As a passionate and dedicated fullstack developer, I thrive on
-                  crafting seamless digital experiences that blend intuitive
-                  user interfaces with robust backend systems. With a blend of
-                  technical expertise, creative problem-solving, and a keen eye
-                  for detail, I bring projects to life that not only meet but
-                  exceed expectations.
-                </p>
-                <div className="p-3 text-white rounded-md w-[6rem] text-center h-auto whitespace-nowrap bg-blue-600">
-                  <a
-                    href="https://wa.me/+2348073847876"
-                    className="font-medium"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Hire Me
-                  </a>
-                </div>
-              </div>
-              <div className="md:basis-2/4">
-                <img
-                  src={template}
-                  alt="profile pic"
-                  className="hidden lg:block"
-                />
-              </div>
-            </div>
+      <div className="hero  p-2 bg-slate-800 md:p-16 flex items-center">
+        <div className="md:basis-2/4 md:p-7">
+          <h3 className="text-2xl md:text-4xl text-gray-500 py-2">Hey!</h3>
+          <h1 className="text-3xl whitespace-nowrap md:text-5xl font-[1000] text-white py-2">
+            I'm <span className="text-blue-400">Adebusuyi</span> Samuel.
+          </h1>
+          <h2 className="md:text-4xl text-white py-1">
+            I am a <span>{typeEffect}</span>
+          </h2>
+          <p className=" text-gray-300 md:text-lg py-2">
+            As a passionate and dedicated fullstack developer, I thrive on
+            crafting seamless digital experiences that blend intuitive user
+            interfaces with robust backend systems. With a blend of technical
+            expertise, creative problem-solving, and a keen eye for detail, I
+            bring projects to life that not only meet but exceed expectations.
+          </p>
+          <div className="p-3 text-white rounded-md w-[6rem] text-center h-auto whitespace-nowrap bg-blue-600">
+            <a
+              href="https://wa.me/+2348073847876"
+              className="font-medium"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hire Me
+            </a>
           </div>
         </div>
-      </section>
+        <div className="md:basis-2/4">
+          <img src={template} alt="profile pic" className="hidden lg:block" />
+        </div>
+      </div>
       <div
         id="skills"
         className="scroll-smooth	font-sans text-3xl text-gray-50 font-extralight pt-16"
@@ -465,7 +452,7 @@ export default function Portfolio() {
           <div className="card m-10 flex flex-col justify-center items-center">
             <FaPhoneAlt className="bg-slate-800 w-20 h-20 p-4 text-yellow-300 rounded-full" />{" "}
             <h2 className=" text-xl font-bold">Contact Number</h2>{" "}
-            <p className="text-gray-300 text-xl">+234 807 384 7876</p>{" "}
+            <p className="text-gray-300 text-xl">+234 907 136 1746</p>{" "}
           </div>
           <div className="card m-10 flex flex-col justify-center items-center">
             <SiMinutemailer className="bg-slate-800 w-20 h-20 p-4 text-yellow-300 rounded-full" />{" "}
